@@ -1,6 +1,6 @@
-![image](https://github.com/Woselko/NetRaspApp/assets/76818798/8bd759cf-a712-4e12-82c2-4e21cb193009)
-![image](https://github.com/Woselko/NetRaspApp/assets/76818798/c96e34a4-32c3-46a4-8c79-df6936f3830e)
-![image](https://github.com/Woselko/NetRaspApp/assets/76818798/f6bed1b5-c606-4db7-9263-e8d8745d4f43)
+![image](https://github.com/Woselko/NetRaspApp/assets/76818798/64573a48-579f-4c62-84dc-a63e828d5e99)
+![image](https://github.com/Woselko/NetRaspApp/assets/76818798/db040443-4f3e-4ccd-a1bb-a386aae79e25)
+![image](https://github.com/Woselko/NetRaspApp/assets/76818798/0bb09a90-4b24-45c6-9a9a-9be6eaaf841e)
 
 
 ## How to build, publish and deploy .NET application on Raspberry Pi 5
@@ -14,7 +14,9 @@ You can also use RPI-imager to install system by command “sudo apt install rpi
   
 ## Setting up your SSH connection (Passwordless)( https://danidudas.medium.com/how-to-connect-to-raspberry-pi-via-ssh-without-password-using-ssh-keys-3abd782688a)
 
-1.	You need to know your Raspberry IP address.  If it is connected you can find it while hovering WIFI icon in top right corner. You can also use command “hostname -I” in Raspberry terminal.
+1.	You need to know your Raspberry IP address.  If it is connected you can find it while hovering WIFI icon in top right corner. 
+You can also use command “hostname -I” in Raspberry terminal.
+
 ![image](https://github.com/Woselko/NetRaspApp/assets/76818798/1e458639-d31f-4e54-9739-99dd6b6c1c53)
 
 2.	Enable SSH server in raspberry
