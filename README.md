@@ -28,20 +28,26 @@ Select “Add Features” and “OpenSSH Server” and “Install” (admin righ
 Set the startup type for “OpenSSH Authentication Agent” and “OpenSSH Server” to “Automatic” in the Windows “Services” app.
 
 4.	Now you should be able to connect via windows CMD to your raspberry
-Use command in windows cmd “ssh <userName>@<IP>”. You’ll be asked for password.
+Use command in windows cmd “ssh userName@IP”. You’ll be asked for password.
 
 5.	Generate an ssh key pair (private-public) on your local computer
 First, check if you already have one. Default all the ssh keys are located in ~/.ssh folder on your computer. If you don’t have this folder or it’s empty you don’t have. To generate a new rsa key pair go to Terminal and simply type and follow the steps ssh-keygen
 ~/.ssh/id_rsa — This is your private key. NEVER share this file with anybody and DO NOT copy this file to external computers/servers.
 ~/.ssh/id_rsa.pub — This is the public key. The content of this file can be shared and the content of this file we will need to copy to the raspberry pi.
 
-6.	ssh-keygen on Raspberry Pi
+6.	Run command "ssh-keygen" on Raspberry Pi, leave empty, press ENTER
 Now look inside your .ssh directory: “ls ~/.ssh” and you should see the files id_rsa and id_rsa.pub: authorized_keys  id_rsa  id_rsa.pub  known_hosts
 
 7.	Copy public key to Raspberry Pi
 vim ~/.ssh/authorized_keys
 // paste in this the content of the ~/.ssh/id_rsa.pub from your local computer
-run command “ssh-copy-id <USERNAME>@<IP-ADDRESS>”
+
+Or open file manually and paste content from your local PC .pub file 
+
+run command “ssh-copy-id USERNAME@IP-ADDRESS”
+
+You'll be asked for a password
+
 Now try to connect once again from your local PC via SSH, connection should be passwordless
 
 ## Install  DOTNET on Raspberry device (https://learn.microsoft.com/en-us/dotnet/iot/deployment)
