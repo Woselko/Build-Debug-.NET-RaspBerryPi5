@@ -15,7 +15,6 @@
             "cwd": "/home/woselko/MyRPIApp",
             "console": "integratedTerminal",
             "externalConsole": false,
-            // "internalConsoleOptions": "neverOpen",
             "internalConsoleOptions": "openOnFirstSessionStart",
             "stopAtEntry": false,
 
@@ -27,13 +26,6 @@
                 ],
                 "debuggerPath": "/home/woselko/vsdbg/vsdbg"
             }
-
-            // "pipeTransport": {
-            //     "pipeCwd": "${workspaceFolder}",
-            //     "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
-            //     "pipeArgs": [],
-            //     "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
-            // }
         },
     ]
 }
