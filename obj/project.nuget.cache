@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QcBqPJSpDPK4rtNrhEV/feez7K6aoZ4dHwiFIzmMUtgecoQw9rSYhpTPDM3f1cqCCBubV2gsjHEJ/0ZRSICPkw==",
+  "success": true,
+  "projectFilePath": "/home/woselko/NetRasp/NetRaspApp/NetRaspApp.csproj",
+  "expectedPackageFiles": [
+    "/home/woselko/.nuget/packages/microsoft.netcore.app.runtime.linux-arm64/7.0.14/microsoft.netcore.app.runtime.linux-arm64.7.0.14.nupkg.sha512",
+    "/home/woselko/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-arm64/7.0.14/microsoft.aspnetcore.app.runtime.linux-arm64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

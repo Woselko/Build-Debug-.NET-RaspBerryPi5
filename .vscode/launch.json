@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "preLaunchTask": "deploy",
+            "name": ".NET Core Launch (remote)",
+            "type": "coreclr",
+            "request": "launch",
+
+            "program": "/home/woselko/.dotnet/dotnet",
+            "args": [
+                "/home/woselko/MyRPIApp/NetRaspApp.dll"
+            ],
+
+            "cwd": "/home/woselko/MyRPIApp",
+            "console": "integratedTerminal",
+            "externalConsole": false,
+            // "internalConsoleOptions": "neverOpen",
+            "internalConsoleOptions": "openOnFirstSessionStart",
+            "stopAtEntry": false,
+
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                "pipeProgram": "ssh",
+                "pipeArgs": [
+                    "woselko@192.168.0.87"
+                ],
+                "debuggerPath": "/home/woselko/vsdbg/vsdbg"
+            }
+
+            // "pipeTransport": {
+            //     "pipeCwd": "${workspaceFolder}",
+            //     "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+            //     "pipeArgs": [],
+            //     "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+            // }
+        },
+    ]
+}

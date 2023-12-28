@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/NetRaspApp.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet publish ${workspaceFolder} -r linux-arm64 -o ${workspaceFolder}/bin/arm",
+            "type": "shell",
+            "problemMatcher": [],
+            "dependsOn": "build"
+        },
+        {
+            "label": "deploy",
+            "command": "scp -r ${workspaceFolder}/bin/arm/* woselko@192.168.0.87:/home/woselko/MyRPIApp",
+            "type": "shell",
+            "problemMatcher": [],
+            "dependsOn": "publish"
+        }
+    ]
+}
